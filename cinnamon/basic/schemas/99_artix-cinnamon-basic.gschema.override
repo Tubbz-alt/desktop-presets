@@ -7,12 +7,12 @@ panels-height=['1:30']
 
 [org.cinnamon.desktop.background]
 picture-options='stretched'
-picture-uri='file:///usr/share/backgrounds/cinnamon_default.jpg'
+picture-uri='file:///usr/share/backgrounds/artix.jpg'
 
 [org.cinnamon.desktop.interface]
 cursor-theme='Breeze'
 font-name='Cantarell 10'
-gtk-theme='Vertex-Maia-Dark'
+gtk-theme='Numix'
 icon-theme='Vibrancy-Full-Dark-Teal'
 
 [org.cinnamon.desktop.screensaver]
@@ -23,51 +23,13 @@ font-message='Comfortaa Semi-Light 12'
 font-time='Comfortaa Semi-Light 64'
 use-custom-format=true
 
-[org.cinnamon.desktop.sound]
-theme-name="LinuxMint"
-event-sounds=false
-input-feedback-sounds=false
-volume-sound-enabled=true
-volume-sound-file="/usr/share/sounds/LinuxMint/stereo/volume.oga"
-
 [org.cinnamon.desktop.wm.preferences]
 num-workspaces=2
-theme='Vertex-Maia-Dark'
+theme='Numix'
 titlebar-font='Cantarell 10'
 
-[org.cinnamon.sounds]
-login-enabled=true
-login-file="/usr/share/sounds/LinuxMint/stereo/login.oga"
-logout-enabled=true
-logout-file="/usr/share/sounds/LinuxMint/stereo/logout.ogg"
-switch-enabled=true
-switch-file="/usr/share/sounds/LinuxMint/stereo/switch.oga"
-close-enabled=false
-close-file="/usr/share/sounds/LinuxMint/stereo/close.oga"
-map-enabled=false
-map-file="/usr/share/sounds/LinuxMint/stereo/map.oga"
-minimize-enabled=false
-minimize-file="/usr/share/sounds/LinuxMint/stereo/minimize.oga"
-maximize-enabled=false
-maximize-file="/usr/share/sounds/LinuxMint/stereo/maximize.oga"
-unmaximize-enabled=false
-unmaximize-file="/usr/share/sounds/LinuxMint/stereo/unmaximize.oga"
-tile-enabled=true
-tile-file="/usr/share/sounds/LinuxMint/stereo/tile.oga"
-plug-enabled=true
-plug-file="/usr/share/sounds/LinuxMint/stereo/plug.oga"
-unplug-enabled=true
-unplug-file="/usr/share/sounds/LinuxMint/stereo/unplug.oga"
-notification-enabled=true
-notification-file="/usr/share/sounds/LinuxMint/stereo/notification.oga"
-
 [org.cinnamon.theme]
-name='Vertex-Maia'
-
-[org.gnome.desktop.sound]
-theme-name="LinuxMint"
-event-sounds=false
-input-feedback-sounds=false
+name='Numix'
 
 [org.gnome.Terminal.Legacy.Profile]
 allow-bold=true
@@ -77,7 +39,7 @@ font='Droid Sans Mono Regular 11'
 foreground-color='rgb(220,233,235)'
 palette=['rgb(0,0,0)', 'rgb(170,0,0)', 'rgb(0,170,0)', 'rgb(170,85,0)', 'rgb(0,0,170)', 'rgb(170,0,170)', 'rgb(0,170,170)', 'rgb(170,170,170)', 'rgb(85,85,85)', 'rgb(255,85,85)', 'rgb(85,255,85)', 'rgb(255,255,85)', 'rgb(85,85,255)', 'rgb(255,85,255)', 'rgb(85,255,255)', 'rgb(255,255,255)']
 rewrap-on-resize=true
-visible-name='manjaro'
+visible-name='artix'
 
 [org.nemo.desktop]
 font='Cantarell 10'
