@@ -1,4 +1,4 @@
-Version=0.4
+Version=0.3.2
 
 PREFIX = /usr/local
 SYSCONFDIR = /etc
@@ -15,8 +15,8 @@ install_icons:
 	install -m0644 ${ICONS} $(DESTDIR)$(PREFIX)/share/icons/artix
 
 install_backgrounds:
-	install -dm0755 $(PREFIX)/share/backgrounds
-	install -m0755 ${BACKGROUNDS} $(PREFIX)/share/backgrounds
+	install -dm0755 $(DESTDIR)$(PREFIX)/share/backgrounds
+	install -m0755 ${BACKGROUNDS} $(DESTDIR)$(PREFIX)/share/backgrounds
 
 uninstall_icons:
 	for f in ${ICONS}; do rm -f $(DESTDIR)$(PREFIX)/share/icons/artix/$$f; done
