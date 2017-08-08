@@ -116,10 +116,6 @@ bindsym $mod+e                  layout toggle split
 bindsym $mod+Mod1+Right         move container to output right
 bindsym $mod+Mod1+Left          move container to output left
 
-# Scratchpad
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
-
 # toggle tiling / floating
 bindsym $mod+Shift+space        floating toggle
 
@@ -276,6 +272,9 @@ focus_follows_mouse no
 
 # disable mouse warping
 #mouse_warping none
+
+# set random background on desktop
+exec_always --no-startup-id feh --bg-fill "$(find $HOME/.wallpaper/|shuf -n1)"
 
 # printscreen
 bindsym Print exec scrot -q 95 '%Y-%m-%d-%s_$wx$h_scrot.png' -e 'mv $f ~/Pictures/'
