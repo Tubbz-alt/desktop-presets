@@ -1,7 +1,7 @@
 # i3 config file
 # for a complete reference please refer to http://i3wm.org/docs/userguide.html
 
-# font settins will be used for window tiles and bars
+# font settings will be used for window tiles and bars
 font xft:Noto Sans 10
 
 # mod key (Mod1=<Alt>, Mod4=<Super>)
@@ -11,7 +11,7 @@ set $mod Mod4
 floating_modifier $mod
 
 # border style <normal|1pixel|pixel xx|none|pixel>
-# note that new_float applies only to windows wich are strating
+# note that new_float applies only to windows which are starting
 # out as floating windows but not to windows that are floated later on
 new_window 1pixel
 new_float normal
@@ -45,13 +45,13 @@ set $base12 #474747
 # focus the last urgent window
 bindsym $mod+u [urgent=latest]  focus
 
-# come back and forth from two alst used windows using Alt+Tab
+# switch back and forth from two last used windows using Alt+Tab
 bindsym Mod1+Tab                workspace back_and_forth
 
 # start a terminal
 bindsym $mod+Return             exec i3-sensible-terminal
 
-# lock i3 with i3lock
+# lock i3 with i3lock-wrapper
 bindsym $mod+x                  exec i3lock-wrapper
 
 # kill focused window
@@ -59,12 +59,12 @@ bindsym $mod+Shift+q kill
 
 # start file manager
 bindsym $mod+n                  exec ranger
-# uncomment (and comment line avobe) if you preffer pcmanfm file manager
+# uncomment (and comment line above) if you prefer pcmanfm file manager
 #bindsym $mod+n exec pcmanfm
 
 # start dmenu-launcher
 bindsym $mod+d                  exec j4-dmenu-desktop
-# uncomment (and comment line ebove) if you use KDE/Plama applications
+# uncomment (and comment line above) if you use KDE/Plama applications
 #bindsym $mod+d exec QT_QPA_PLATFORMTHEME="kde" j4-dmenu-desktop
 
 # show an OSD calendar
@@ -139,7 +139,7 @@ bindsym $mod+Ctrl+Right         workspace next
 bindsym $mod+Ctrl+Left          workspace prev
 
 # name the workspaces
-# to display fancy names or symbols you can use a font likr awesome and
+# to display fancy names or symbols you can use a font like awesome and
 # use something like the following example:
 #       set $workspace1 "1: "
 #       set $workspace2 "2: "
@@ -258,7 +258,7 @@ bindsym XF86AudioLowerVolume exec "amixer -q -D default sset Master 5%- && pkill
 # mute sound
 bindsym XF86AudioMute        exec "amixer -q -D default sset Master toggle && pkill -RTMIN+1 i3blocks && .config/i3/mute | osd_cat -p middle -d 1 -A center -l 1 -c green -f '-*-*-medium-*-*-*-20-*-*-*-*-*-*-*'"
 
-# sreen brightness controls
+# screen brightness controls
 bindsym XF86MonBrightnessUp     exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown   exec xbacklight -dec 10 # decrease screen brightness
 
