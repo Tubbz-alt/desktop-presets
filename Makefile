@@ -1,4 +1,4 @@
-Version=0.5
+Version=0.6
 
 PREFIX = /usr/local
 SYSCONFDIR = /etc
@@ -8,7 +8,8 @@ ICONS = \
 	$(wildcard icons/*.png)
 
 BACKGROUNDS = \
-	$(wildcard backgrounds/*.jpg)
+	$(wildcard backgrounds/*.jpg) \
+	$(wildcard backgrounds/*.png)
 
 install_icons:
 	install -dm0755 $(DESTDIR)$(PREFIX)/share/icons/artix
